@@ -1,28 +1,27 @@
 #ifndef VENGADOR
 #define VENGADOR
-#include <string>
-#include "iostream"
 #include "DtFecha.h"
+#include <string>
 
 using namespace std;
 
-class Vengador{
+class Vengador {
     private:
         string nombre;
         int poder;
-        Fecha fechaNac;
+        DtFecha fechaNac;
     public:
-        Vengador(string nombre, int poder ,Fecha fechaNac);
         Vengador();
-        void setNombre(string nombre);
-        void setPoder(int poder);
-        void setFechaNac(Fecha fechaNac);
+        Vengador(string nombre, int poder, DtFecha fechaNac);
         string getNombre();
+        void setNombre(string nombre);
         int getPoder();
-        Fecha getFechaNac(); 
+        void setPoder(int poder);
+        DtFecha getFechaNac();
+        void setFechaNac(DtFecha fechaNac);
         ~Vengador();
 
         friend bool operator < (Vengador&,Vengador&);
-
 };
+
 #endif

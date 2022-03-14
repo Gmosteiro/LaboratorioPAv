@@ -1,30 +1,26 @@
-#ifndef FECHA
-#define FECHA
+#ifndef DTFECHA
+#define DTFECHA
 #include <iostream>
-
 using namespace std;
-
-class Fecha{
-
-    private :
+class DtFecha {
+  private:
     int dia;
     int mes;
     int anio;
-    public :
-    Fecha();
-    Fecha(int dia, int mes, int anio);
-    void setDia(int dia);
+  public:
+    DtFecha();
+    DtFecha(int dia,int mes,int anio);
     int getDia();
-    void setMes(int mes);
+    void setDia(int dia);
     int getMes();
-    void setAnio(int anio);
+    void setMes(int mes);
     int getAnio();
-    ~Fecha();
-    
-    friend ostream& operator << (ostream&, Fecha&);
-    friend bool operator ==(const Fecha&, const Fecha&);
-    friend bool operator < (const Fecha&, const Fecha&);
+    void setAnio(int anio);
+    ~DtFecha();
+
+    friend ostream& operator <<(ostream&,DtFecha&);
+    friend bool operator <(const DtFecha&,const DtFecha&);
+    friend bool operator ==(const DtFecha&, const DtFecha&);
 };
 
 #endif
-

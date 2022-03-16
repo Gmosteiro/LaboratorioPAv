@@ -1,5 +1,5 @@
 principal: clean clear main.o DtJugador.o Jugador.o 
-	g++ DtJugador.o Jugador.o main.o -o sistema
+	g++ DtJugador.o Jugador.o main.o -o sistema.exe
 DtJugador.o: DtJugador.cpp
 	g++ -g -c DtJugador.cpp
 Jugador.o: Jugador.cpp

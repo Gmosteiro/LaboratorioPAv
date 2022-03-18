@@ -10,6 +10,11 @@ struct Jugadores {
     Jugador* j[MAX_JUGADORES];
     int tope=0;
 } colJugadores;
+struct DtJugadores {
+    DtJugador* dtj[MAX_JUGADORES];
+    int tope=0;
+} colDtJugadores;
+
 
 void agregarJugador(string nickname, int edad, string password){
     int i = 0;
@@ -19,7 +24,11 @@ void agregarJugador(string nickname, int edad, string password){
         Jugador* jugador = new Jugador(nickname,edad,password);
         colJugadores.j[colJugadores.tope]=jugador;
         colJugadores.tope++;
+        DtJugador* dtJugador = new DtJugador(nickname, edad);
+        colDtJugadores.dtj[colDtJugadores.tope]=dtJugador;
+        colDtJugadores.tope++;
         cout << "Jugador " << nickname << " ingresado succesfully \n";
+
 
     } else {
         throw invalid_argument("Ya existe un jugador con ese nickname");

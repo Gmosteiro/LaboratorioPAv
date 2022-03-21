@@ -23,4 +23,8 @@
     void Jugador::setPassword(string password){
         this->password=password;
     }
+    DtJugador* Jugador::getDtJugador(){
+        DtJugador* dt = new DtJugador(this->nickname, this->edad);
+        return dt;
+    }
     Jugador::~Jugador(){}

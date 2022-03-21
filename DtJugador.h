@@ -1,6 +1,7 @@
 #ifndef DTJUGADOR
 #define DTJUGADOR
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -16,6 +17,8 @@ public:
     int getEdad();
     void setEdad(int edad);
     ~DtJugador();
-};
+
+    friend ostream& operator <<(ostream&,DtJugador&);
+    };
 
 #endif

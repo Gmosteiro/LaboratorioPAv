@@ -1,0 +1,8 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/tecnoinf/LaboratorioPAv'
+rm -rf *.o sistema
+clear
+ 
+g++ DtJugador.o Jugador.o Juego.o DtJuego.o Partida.o PartidaIndividual.o PartidaMultijugador.o main.o -o sistema.exe
+make: Leaving directory '/home/tecnoinf/LaboratorioPAv'
+ 

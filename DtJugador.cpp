@@ -18,3 +18,7 @@ void DtJugador::setEdad(int edad){
     this->edad=edad;
 }
 DtJugador::~DtJugador(){}
+ostream& operator <<(ostream& salida,DtJugador& dtj){
+    cout << "Nickname: " << dtj.nickname << " | Edad: " << dtj.edad << endl;
+    return salida;
+}

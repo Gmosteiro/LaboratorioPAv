@@ -24,3 +24,7 @@
         this->totalHorasDeJuego = totalHorasDeJuego;
     }
     DtJuego::~DtJuego(){}  
+    ostream& operator <<(ostream& salida,DtJuego& dtg){
+    cout << "Nombre: " << dtg.nombre << " | Genero: " << dtg.generos[dtg.genero] << " | Horas de juego totales: " << dtg.totalHorasDeJuego << endl;
+    return salida;
+}

@@ -69,17 +69,41 @@ void agregarVideojuego(string nombre, TipoGenero genero){
     }
 }
 
+DtJuego** obtenerVideojuegos(int& cantVideojuegos){
+    DtJuego** g = new DtJuego*[colJuegos.tope];
+    for(int i=0; i<colJuegos.tope; i++){
+        DtJuego* dt = colJuegos.g[i]->getDtJuego();
+        g[i] = dt;
+        cantVideojuegos++;
+    }
+    cout << "Videojuegos retornados succesfully" << endl;
+    cantVideojuegos = colJuegos.tope;
+    return g;    
+}
+
+void imprimirVideojuegos(DtJuego** dtgs, int cant){
+    cout << "\nListado de videojuegos\n" << endl;
+    cout << "-----------------------------------------\n" << endl;
+
+    for(int i=0; i<cant; i++){
+        cout << *dtgs[i] << endl;
+        }
+}
+
+
 int main(){
     try
     {
-        int cant;
+        int cantJ, cantG;
         agregarJugador("xXJorgeXx", 9, "jorge");
         agregarJugador("xXPepeXx", 13, "pepe123");
         agregarVideojuego("Liga de las leyendas", OTRO);
         agregarVideojuego("PES 2022", DEPORTE);
-        DtJugador** jug = obtenerJugadores(cant);
+        DtJugador** jug = obtenerJugadores(cantJ);
+        DtJuego** gam = obtenerVideojuegos(cantG);
         
-        imprimirJugadores(jug, cant);
+        imprimirJugadores(jug, cantJ);
+        imprimirVideojuegos(gam, cantG);
         
         
         

@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Mar 21 10:50:33 2022
+# Make data base, printed on Wed Mar 23 09:59:49 2022
 
 # Variables
 
@@ -21,9 +21,9 @@ NO_AT_BRIDGE = 1
 # environment
 LMOD_SETTARG_FULL_SUPPORT = no
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-8adf82eb-0eff-4e22-83c8-85832fc1ffa7.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-32e96c36-7e3e-44a5-8e45-254c8aea00af.sock
 # environment
-GNOME_KEYRING_CONTROL = /home/tecnoinf/.cache/keyring-K4EGJ1
+GNOME_KEYRING_CONTROL = /home/tecnoinf/.cache/keyring-CXJHJ1
 # environment
 VSCODE_CWD = /home/tecnoinf
 # default
@@ -43,7 +43,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/tecnoinf/LaboratorioPAv
+PWD = /home/tecnoinf/Desktop/LaboratorioPAv
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -75,7 +75,7 @@ LMOD_CMD = /usr/share/lmod/lmod/libexec/lmod
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /home/tecnoinf/LaboratorioPAv
+CURDIR := /home/tecnoinf/Desktop/LaboratorioPAv
 # environment
 define BASH_FUNC_module%%
 () {  eval $($LMOD_CMD bash "$@") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
@@ -94,11 +94,11 @@ LESSOPEN = ||/usr/bin/lesspipe.sh %s
 # environment
 MFLAGS = -pqrR
 # environment
-_LXSESSION_PID = 1090
+_LXSESSION_PID = 1073
 # default
 .SHELLFLAGS := -c
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXAvM8fH/agent.1090
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXMsyUfz/agent.1073
 # environment
 HISTSIZE = 1000
 # environment
@@ -112,7 +112,7 @@ MAKEFILE_LIST := makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 1632
+VSCODE_PID = 1692
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -149,7 +149,7 @@ MAKECMDGOALS := all
 # environment
 XMODIFIERS = @im=none
 # environment
-SHLVL = 0
+SHLVL = 2
 # environment
 MAKELEVEL := 0
 # default
@@ -171,7 +171,7 @@ LMOD_sys = Linux
 # environment
 XDG_CONFIG_HOME = /home/tecnoinf/.config
 # environment
-INVOCATION_ID = 759885c7a5b149888771dd0d4d40ec5e
+INVOCATION_ID = 3ceb08e855414c1eaeff7acd011391a4
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
@@ -184,6 +184,8 @@ GTK_IM_MODULE = gtk-im-context-simple
 XDG_CURRENT_DESKTOP = LXDE
 # environment
 KDEDIRS = /usr
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:
 # automatic
 +F = $(notdir $+)
 # environment
@@ -196,13 +198,12 @@ GNUMAKEFLAGS :=
 LOGNAME = tecnoinf
 # environment
 BASH_ENV = /usr/share/lmod/lmod/init/bash
- 
 # environment
 XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := principal
 # environment
-SYSTEMD_EXEC_PID = 1002
+SYSTEMD_EXEC_PID = 985
 # environment
 MODULEPATH_ROOT = /usr/share/modulefiles
 # environment
@@ -222,13 +223,15 @@ DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/
 # environment
 PREFERRED = /usr/bin/startlxde
 # environment
-SSH_AGENT_PID = 1295
+SSH_AGENT_PID = 1280
 # environment
 _ = /bin/make
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:21353
+COLORTERM = truecolor
+# environment
+JOURNAL_STREAM = 8:26356
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -242,7 +245,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-53b47390-1.65.1-main.sock
 # environment
-TERM = dumb
+TERM = xterm-256color
 # environment
 XDG_SESSION_ID = 1
 # default
@@ -252,7 +255,13 @@ XDG_SESSION_ID = 1
 # default
 SUFFIXES := 
 # environment
+VSCODE_CLI = 1
+# environment
 LMOD_PKG = /usr/share/lmod/lmod
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VTE_VERSION = 6602
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
 # environment
@@ -260,7 +269,7 @@ XDG_MENU_PREFIX = lxde-
 # environment
 LMOD_VERSION = 8.4.30
 # variable set hash-table stats:
-# Load=118/1024=12%, Rehash=0, Collisions=11/148=7%
+# Load=123/1024=12%, Rehash=0, Collisions=12/153=8%
 
 # Pattern-specific Variable Values
 
@@ -268,9 +277,9 @@ LMOD_VERSION = 8.4.30
 
 # Directories
 
-# . (device 41, inode 49902): 34 files, no impossibilities.
+# . (device 41, inode 62494): 42 files, no impossibilities.
 
-# 34 files, no impossibilities in 1 directories.
+# 42 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -285,6 +294,12 @@ DtJuego.o: DtJuego.cpp
 #  recipe to execute (from 'makefile', line 10):
 	g++ -g -c DtJuego.cpp
 
+# Not a target:
+DtPartidaIndividual.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 Partida.o: Partida.cpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -297,6 +312,13 @@ Jugador.cpp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+DtPartida.o: DtPartida.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 18):
+	g++ -g -c DtPartida.cpp
 
 Juego.o: Juego.cpp
 #  Implicit rule search has not been done.
@@ -320,10 +342,9 @@ Partida.cpp:
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
-#  recipe to execute (from 'makefile', line 20):
-	rm -rf *.o sistema
+#  recipe to execute (from 'makefile', line 26):
+	rm -rf *.o sistema sistema.exe
 
 # Not a target:
 Juego.cpp:
@@ -337,19 +358,32 @@ DtJugador.cpp:
 #  Modification time never checked.
 #  File has not been updated.
 
-clear:
+DtPartidaMultijugador.o: DtPartidaMultijugador.cpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'makefile', line 22):
+	g++ -g -c DtPartidaMultijugador.cpp
+
+# Not a target:
+DtPartida.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clear:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 28):
 	clear
 
-principal: clean clear main.o DtJugador.o Jugador.o Juego.o DtJuego.o Partida.o PartidaIndividual.o PartidaMultijugador.o
+principal: clear clean main.o DtJugador.o Jugador.o Juego.o DtJuego.o Partida.o PartidaIndividual.o PartidaMultijugador.o DtPartida.o DtPartidaIndividual.o DtPartidaMultijugador.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'makefile', line 2):
-	g++ DtJugador.o Jugador.o Juego.o DtJuego.o Partida.o PartidaIndividual.o PartidaMultijugador.o main.o -o sistema.exe
+	g++ DtJugador.o Jugador.o Juego.o DtJuego.o Partida.o PartidaIndividual.o PartidaMultijugador.o DtPartida.o DtPartidaIndividual.o DtPartidaMultijugador.o main.o -o sistema
 
 # Not a target:
 .DEFAULT:
@@ -372,6 +406,7 @@ DtJuego.cpp:
 
 # Not a target:
 PartidaMultijugador.cpp:
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -400,8 +435,7 @@ main.o: main.cpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'makefile', line 18):
- 
+#  recipe to execute (from 'makefile', line 24):
 	g++ -g -c main.cpp
 
 DtJugador.o: DtJugador.cpp
@@ -411,10 +445,17 @@ DtJugador.o: DtJugador.cpp
 #  recipe to execute (from 'makefile', line 4):
 	g++ -g -c DtJugador.cpp
 
+DtPartidaIndividual.o: DtPartidaIndividual.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 20):
+	g++ -g -c DtPartidaIndividual.cpp
+
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-03-21 10:50:12.213477617
+#  Last modified 2022-03-23 09:57:56.9854689
 #  File has been updated.
 #  Successfully updated.
 
@@ -425,20 +466,26 @@ PartidaMultijugador.o: PartidaMultijugador.cpp
 #  recipe to execute (from 'makefile', line 16):
 	g++ -g -c PartidaMultijugador.cpp
 
+# Not a target:
+DtPartidaMultijugador.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 # files hash-table stats:
-# Load=23/1024=2%, Rehash=0, Collisions=0/61=0%
+# Load=29/1024=3%, Rehash=0, Collisions=0/76=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 42 / storage = 486 B / avg = 11 B
-# current buf: size = 8162 B / used = 486 B / count = 42 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 50 / storage = 651 B / avg = 13 B
+# current buf: size = 8162 B / used = 651 B / count = 50 / avg = 13 B
 
-# strcache performance: lookups = 83 / hit rate = 49%
+# strcache performance: lookups = 103 / hit rate = 51%
 # hash-table stats:
-# Load=42/8192=1%, Rehash=0, Collisions=0/83=0%
-# Finished Make data base on Mon Mar 21 10:50:33 2022
+# Load=50/8192=1%, Rehash=0, Collisions=0/103=0%
+# Finished Make data base on Wed Mar 23 09:59:49 2022
 
  

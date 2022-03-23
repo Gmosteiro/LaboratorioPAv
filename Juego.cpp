@@ -17,6 +17,10 @@
     void Juego::setGenero(TipoGenero genero){
         this->genero = genero;
     }
+    Partida** Juego::getPartidas(int &cantP){
+        cantP = this->tope;
+        return this->partidas;
+    }
     DtJuego* Juego::getDtJuego(){
         DtJuego* dt = new DtJuego(this->nombre, this->genero, 0); //darTotalHorasParticipantes()
         return dt;

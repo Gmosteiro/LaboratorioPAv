@@ -14,6 +14,7 @@ private:
     TipoGenero genero;
     Partida* partidas[MAX_PARTIDAS];
     int tope;
+    
 public:
     Juego();
     Juego(string nombre, TipoGenero genero);
@@ -22,6 +23,9 @@ public:
     TipoGenero getGenero();
     void setGenero(TipoGenero genero);
     Partida** getPartidas(int &cantP);
+    void setPartidas(Partida* p);
+    int getTope();
+    void setTope(int tope);
     DtJuego* getDtJuego();
     ~Juego();   
 };

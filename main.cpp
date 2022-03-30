@@ -1,15 +1,17 @@
 #include "DtJugador.h"
-#include "Jugador.h"
-#include "Juego.h"
 #include "DtJuego.h"
 #include "DtPartida.h"
 #include "DtPartidaIndividual.h"
 #include "DtPartidaMultijugador.h"
+#include "DtFechaHora.h"
+#include "Jugador.h"
+#include "Juego.h"
 #include "Partida.h"
 #include "PartidaIndividual.h"
 #include "PartidaMultijugador.h"
 #include <iostream>
-#define MAX_JUGADORES 1
+#include <ctime>
+#define MAX_JUGADORES 100
 #define MAX_JUEGOS 100
 
 using namespace std;
@@ -89,11 +91,13 @@ void iniciarPartida(string nickname, string videojuego, DtPartida* datos){
 
     bool existeJugador = false;
     bool existeJuego = false;
-    int index;
+    int indexP;
+    int indexJ;
 
     for(int i=0; i<colJugadores.tope; i++){
         if(colJugadores.j[i]->getNickname()==nickname && !existeJugador){  
             existeJugador=true;
+            indexJ = i;
         }
     }
 
@@ -103,8 +107,7 @@ void iniciarPartida(string nickname, string videojuego, DtPartida* datos){
                 if(colJuegos.g[j]->getNombre()==videojuego && !existeJuego){
 
                     existeJuego=true;
-                    index = j;
-                    
+                    indexP = j;
 
                 }
             }
@@ -114,13 +117,16 @@ void iniciarPartida(string nickname, string videojuego, DtPartida* datos){
             DtPartidaIndividual* dti = dynamic_cast<DtPartidaIndividual*>(datos);
             if(dti != NULL){
                 
-                Partida* pi = new PartidaIndividual(dti->getFecha(), dti->getDuracion(), dti->getcontinuaPartidaAnterior());
+                Partida* pi = new PartidaIndividual(dti->getFecha(), dti->getDuracion(), colJugadores.j[indexJ]->getDtJugador(), dti->getcontinuaPartidaAnterior());
+                colJuegos.g[indexP]->setPartidas(pi);
 
             }else{
+
                 DtPartidaMultijugador* dtm = dynamic_cast<DtPartidaMultijugador*>(datos);
                 if(dtm != NULL){
 
-                Partida* pm = new PartidaMultijugador(dtm->getFecha(), dtm->getDuracion(), dtm->getTransmitidaEnVivo(), dtm->getCantParticipantes());
+                Partida* pm = new PartidaMultijugador(dtm->getFecha(), dtm->getDuracion(), colJugadores.j[indexJ]->getDtJugador(), dtm->getTransmitidaEnVivo(), dtm->getCantParticipantes());
+                colJuegos.g[indexP]->setPartidas(pm);
 
                 }
             }
@@ -139,8 +145,50 @@ void iniciarPartida(string nickname, string videojuego, DtPartida* datos){
 
     }
 
-    
+    cout << "Partida registrada succesfully \n";
 
+}
+
+DtPartida** obtenerPartidas(string videojuego, int& cantPartidas){
+    
+    bool existeJuego = false;
+    int index;
+    
+        for(int j=0; j<colJuegos.tope; j++){
+                if(colJuegos.g[j]->getNombre()==videojuego && !existeJuego){
+
+                    existeJuego=true;
+                    index = j;
+
+                }
+            }
+
+
+    if(existeJuego){
+        DtPartida** p = new DtPartida*[colJuegos.g[index]->getTope()];
+
+    }else{
+
+    }
+    
+    
+    /*DtJugador** j = new DtJugador*[colJugadores.tope];
+    for(int i=0; i<colJugadores.tope; i++){
+        DtJugador* dt = colJugadores.j[i]->getDtJugador();
+        j[i] = dt;
+        cantJugadores++;
+    }
+    cantJugadores = colJugadores.tope;
+    return j;*/
+}
+
+void imprimirPartidas(DtPartida** dtps, int cant){
+    cout << "\nListado de jugadores\n" << endl;
+    cout << "-----------------------------------------\n" << endl;
+
+    for(int i=0; i<cant; i++){
+        cout << *dtps[i] << endl; //SOBRECARGAR
+        }
 }
 
 void imprimirVideojuegos(DtJuego** dtgs, int cant){
@@ -218,21 +266,98 @@ void menuAgregarVideoJuego(){
     }    
 }
 
+void menuIniciarPartida(){
+
+    string nickname;
+    string juego;
+    int tipo;
+    int duracion;
+    bool conf;
+
+    time_t t = time(NULL);
+	tm* timePtr = localtime(&t);
+    
+    DtFechaHora *fecha = new DtFechaHora(timePtr->tm_mday, (timePtr->tm_mon+1), (timePtr->tm_year+1900), timePtr->tm_hour, timePtr->tm_min);
+    
+    cout << "\nAgregar Patida\n";
+    cout << "-----------------------------------------\n";
+    cout << "\nIngrese nickname:\n";
+    cin >> nickname;
+    cout << "\nIngrese el nombre del videojuego\n";
+    cin >> juego;
+    cout << "\nSeleccione el tipo de partida: 1- Individual; 2- Multijugador\n";
+    cin >> tipo;
+
+    try{
+
+    switch (tipo)
+    {
+        case 1:
+        {
+        bool continua;
+        cout << "\nIngrese la duración de la partida:\n";
+        cin >> duracion;
+        cout << "\nEs una continuación? 1- Si; 2- No\n";
+        cin >> conf;
+        if(conf != 1){
+            continua = true;
+        }else{
+            continua = false;
+        }
+
+            DtPartida *dtpi = new DtPartidaIndividual(fecha, duracion, continua);
+
+        }
+        break;
+        case 2:
+        {
+        int cantParticipantes;
+        bool enVivo;
+        cout << "\nIngrese la duración de la partida:\n";
+        cin >> duracion;
+        cout << "\nIngrese la cantidad de jugadores:\n";
+        cin >> cantParticipantes;
+        cout << "\nFue transmitida en vivo? 1- Si; 2- No\n";
+
+        cin >> conf;
+        if(conf != 1){
+            enVivo = true;
+        }else{
+            enVivo = false;
+        }
+
+        DtPartida *dtpm = new DtPartidaMultijugador(fecha, duracion, enVivo, cantParticipantes);
+
+                iniciarPartida(nickname, juego, dtpm);
+            
+        }
+        break;
+    }
+
+    }catch (invalid_argument& e){
+        cout << e.what() << endl;
+    }  
+
+}
+
 int main(){
     
         int cantJ, cantG, cantP;
         
         string nickname, password;
         int edad;
+        int opcion = 0;
 
         DtJugador** jug;
         DtJuego** gam;
         Partida** par;
 
         try{
+
         menu();
-        int opcion;
+        cin.clear();
         cin >> opcion;
+
         while(opcion!=10){   
             switch(opcion){
                 case 1: 
@@ -255,16 +380,19 @@ int main(){
                     break;
                 case 5: 
                         system("clear");
-                        
-                break;
+                        menuIniciarPartida();                 
+                    break;
                 default:
                         cout << "\nSeleccione una opcion valida\n" << endl;
                     break;
                 }
-    menu();
-    cin >> opcion;
-    
-    }}catch(const std::exception& e)
+
+        menu();
+        cin.clear();      
+        cin >> opcion;
+
+    }
+    }catch(const std::exception& e)
     {
         std::cerr << e.what() << '\n';
     }    

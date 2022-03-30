@@ -21,8 +21,19 @@
         cantP = this->tope;
         return this->partidas;
     }
+    void Juego::setPartidas(Partida* p){
+        this->partidas[this->tope]=p;
+        this->tope++;
+    }
+    int Juego::getTope(){
+        return this->tope;
+    }
+    void Juego::setTope(int tope){
+        this->tope = tope;
+    }
     DtJuego* Juego::getDtJuego(){
         DtJuego* dt = new DtJuego(this->nombre, this->genero, 0); //darTotalHorasParticipantes()
         return dt;
     }
+    
     Juego::~Juego(){}

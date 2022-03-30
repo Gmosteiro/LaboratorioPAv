@@ -1,8 +1,9 @@
 #include "PartidaMultijugador.h"
     PartidaMultijugador::PartidaMultijugador(){}
-    PartidaMultijugador::PartidaMultijugador(DtFechaHora* fecha, int duracion, bool transmitidaEnVivo, int cantParticipantes){
+    PartidaMultijugador::PartidaMultijugador(DtFechaHora* fecha, int duracion, DtJugador* host, bool transmitidaEnVivo, int cantParticipantes){
         setFecha(fecha);
         setDuracion(duracion);
+        setHost(host);
         this->transmitidaEnVivo = transmitidaEnVivo;
         this->cantParticipantes = cantParticipantes;  // ashey
     }

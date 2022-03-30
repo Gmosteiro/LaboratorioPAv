@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Mar 23 09:59:49 2022
+# Make data base, printed on Wed Mar 30 09:35:19 2022
 
 # Variables
 
@@ -21,9 +21,9 @@ NO_AT_BRIDGE = 1
 # environment
 LMOD_SETTARG_FULL_SUPPORT = no
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-32e96c36-7e3e-44a5-8e45-254c8aea00af.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e2a6c009-91d7-4485-815b-ab283e6a896f.sock
 # environment
-GNOME_KEYRING_CONTROL = /home/tecnoinf/.cache/keyring-CXJHJ1
+GNOME_KEYRING_CONTROL = /home/tecnoinf/.cache/keyring-VU68J1
 # environment
 VSCODE_CWD = /home/tecnoinf
 # default
@@ -43,7 +43,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/tecnoinf/Desktop/LaboratorioPAv
+PWD = /home/tecnoinf/LaboratorioPAv
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -75,7 +75,7 @@ LMOD_CMD = /usr/share/lmod/lmod/libexec/lmod
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /home/tecnoinf/Desktop/LaboratorioPAv
+CURDIR := /home/tecnoinf/LaboratorioPAv
 # environment
 define BASH_FUNC_module%%
 () {  eval $($LMOD_CMD bash "$@") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
@@ -94,11 +94,11 @@ LESSOPEN = ||/usr/bin/lesspipe.sh %s
 # environment
 MFLAGS = -pqrR
 # environment
-_LXSESSION_PID = 1073
+_LXSESSION_PID = 1077
 # default
 .SHELLFLAGS := -c
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXMsyUfz/agent.1073
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXX5LBrII/agent.1077
 # environment
 HISTSIZE = 1000
 # environment
@@ -112,7 +112,7 @@ MAKEFILE_LIST := makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 1692
+VSCODE_PID = 1731
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -171,7 +171,7 @@ LMOD_sys = Linux
 # environment
 XDG_CONFIG_HOME = /home/tecnoinf/.config
 # environment
-INVOCATION_ID = 3ceb08e855414c1eaeff7acd011391a4
+INVOCATION_ID = 7e1fd3785b39405480796177250cab93
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
@@ -203,7 +203,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := principal
 # environment
-SYSTEMD_EXEC_PID = 985
+SYSTEMD_EXEC_PID = 987
 # environment
 MODULEPATH_ROOT = /usr/share/modulefiles
 # environment
@@ -223,7 +223,7 @@ DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/
 # environment
 PREFERRED = /usr/bin/startlxde
 # environment
-SSH_AGENT_PID = 1280
+SSH_AGENT_PID = 1282
 # environment
 _ = /bin/make
 # environment
@@ -231,7 +231,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 COLORTERM = truecolor
 # environment
-JOURNAL_STREAM = 8:26356
+JOURNAL_STREAM = 8:27207
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -277,9 +277,9 @@ LMOD_VERSION = 8.4.30
 
 # Directories
 
-# . (device 41, inode 62494): 42 files, no impossibilities.
+# . (device 42, inode 104852): 43 files, no impossibilities.
 
-# 42 files, no impossibilities in 1 directories.
+# 43 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -292,6 +292,7 @@ DtJuego.o: DtJuego.cpp
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'makefile', line 10):
+ 
 	g++ -g -c DtJuego.cpp
 
 # Not a target:
@@ -343,8 +344,15 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'makefile', line 26):
+#  recipe to execute (from 'makefile', line 28):
 	rm -rf *.o sistema sistema.exe
+
+DtFechaHora.o: DtFechaHora.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 24):
+	g++ -g -c DtFechaHora.cpp	
 
 # Not a target:
 Juego.cpp:
@@ -375,15 +383,15 @@ clear:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'makefile', line 28):
+#  recipe to execute (from 'makefile', line 30):
 	clear
 
-principal: clear clean main.o DtJugador.o Jugador.o Juego.o DtJuego.o Partida.o PartidaIndividual.o PartidaMultijugador.o DtPartida.o DtPartidaIndividual.o DtPartidaMultijugador.o
+principal: clear clean main.o DtJugador.o Jugador.o Juego.o DtJuego.o Partida.o PartidaIndividual.o PartidaMultijugador.o DtPartida.o DtPartidaIndividual.o DtPartidaMultijugador.o DtFechaHora.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'makefile', line 2):
-	g++ DtJugador.o Jugador.o Juego.o DtJuego.o Partida.o PartidaIndividual.o PartidaMultijugador.o DtPartida.o DtPartidaIndividual.o DtPartidaMultijugador.o main.o -o sistema
+	g++ DtJugador.o Jugador.o Juego.o DtJuego.o Partida.o PartidaIndividual.o PartidaMultijugador.o DtPartida.o DtPartidaIndividual.o DtPartidaMultijugador.o DtFechaHora.o main.o -o sistema
 
 # Not a target:
 .DEFAULT:
@@ -406,7 +414,6 @@ DtJuego.cpp:
 
 # Not a target:
 PartidaMultijugador.cpp:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -435,7 +442,7 @@ main.o: main.cpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'makefile', line 24):
+#  recipe to execute (from 'makefile', line 26):
 	g++ -g -c main.cpp
 
 DtJugador.o: DtJugador.cpp
@@ -455,7 +462,7 @@ DtPartidaIndividual.o: DtPartidaIndividual.cpp
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-03-23 09:57:56.9854689
+#  Last modified 2022-03-30 09:34:25.675718602
 #  File has been updated.
 #  Successfully updated.
 
@@ -467,25 +474,31 @@ PartidaMultijugador.o: PartidaMultijugador.cpp
 	g++ -g -c PartidaMultijugador.cpp
 
 # Not a target:
+DtFechaHora.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 DtPartidaMultijugador.cpp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=29/1024=3%, Rehash=0, Collisions=0/76=0%
+# Load=31/1024=3%, Rehash=0, Collisions=0/81=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 50 / storage = 651 B / avg = 13 B
-# current buf: size = 8162 B / used = 651 B / count = 50 / avg = 13 B
+# strcache buffers: 1 (0) / strings = 51 / storage = 665 B / avg = 13 B
+# current buf: size = 8162 B / used = 665 B / count = 51 / avg = 13 B
 
-# strcache performance: lookups = 103 / hit rate = 51%
+# strcache performance: lookups = 108 / hit rate = 52%
 # hash-table stats:
-# Load=50/8192=1%, Rehash=0, Collisions=0/103=0%
-# Finished Make data base on Wed Mar 23 09:59:49 2022
+# Load=51/8192=1%, Rehash=0, Collisions=0/108=0%
+# Finished Make data base on Wed Mar 30 09:35:19 2022
 
  

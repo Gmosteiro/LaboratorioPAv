@@ -1,9 +1,10 @@
 #include "PartidaIndividual.h"
 
     PartidaIndividual::PartidaIndividual(){}
-    PartidaIndividual::PartidaIndividual(DtFechaHora* fecha, int duracion, bool continuaPartidaAnterior){
+    PartidaIndividual::PartidaIndividual(DtFechaHora* fecha, int duracion, DtJugador* host, bool continuaPartidaAnterior){
         setFecha(fecha);
         setDuracion(duracion);
+        setHost(host);
         this->continuaPartidaAnterior = continuaPartidaAnterior;
     }
     bool PartidaIndividual::getcontinuaPartidaAnterior(){

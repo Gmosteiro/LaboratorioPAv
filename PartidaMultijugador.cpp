@@ -20,7 +20,7 @@
         this->cantParticipantes = cantParticipantes;
     }
     int PartidaMultijugador::darTotalHorasParticipantes(){
-        return 0;
+        return (this->getDuracion())*(this->cantParticipantes);
     }
     PartidaMultijugador::~PartidaMultijugador(){}  //si esto anda a la prime
     DtPartida* PartidaMultijugador::getDtPartida(){

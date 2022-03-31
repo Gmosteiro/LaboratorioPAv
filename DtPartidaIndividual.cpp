@@ -16,7 +16,7 @@
 
     ostream& operator <<(ostream& salida,DtPartidaIndividual& dtpi){
 
-    cout << "Fecha de la partida: " << dtpi.getFecha() << " | Duracion: " << dtpi.getDuracion() << " | Partida continuada: " << dtpi.getcontinuaPartidaAnterior() << endl;
+    cout << "Fecha de la partida: " << *dtpi.getFecha() << " | Duracion: " << dtpi.getDuracion() << " | Partida continuada: " << dtpi.getOpciones(dtpi.getcontinuaPartidaAnterior()) << endl;
     return salida;
 
     }

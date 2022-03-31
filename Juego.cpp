@@ -32,7 +32,11 @@
         this->tope = tope;
     }
     DtJuego* Juego::getDtJuego(){
-        DtJuego* dt = new DtJuego(this->nombre, this->genero, 0); //darTotalHorasParticipantes()
+        int totalHoras = 0;
+        for(int i=0;i<this->tope;i++){
+            totalHoras += this->partidas[i]->darTotalHorasParticipantes();
+        }
+        DtJuego* dt = new DtJuego(this->nombre, this->genero, totalHoras); //darTotalHorasParticipantes()
         return dt;
     }
     

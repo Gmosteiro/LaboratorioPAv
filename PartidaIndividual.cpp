@@ -14,7 +14,7 @@
         this->continuaPartidaAnterior = continuaPartidaAnterior;
     }
     int PartidaIndividual::darTotalHorasParticipantes(){
-        return 0;
+        return this->getDuracion();
     }
     PartidaIndividual::~PartidaIndividual(){
     }

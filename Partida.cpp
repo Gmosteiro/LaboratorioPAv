@@ -24,4 +24,5 @@
     void Partida::setHost(DtJugador* host){
         this->host = host;
     }
+
     Partida::~Partida(){}

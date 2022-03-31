@@ -39,3 +39,8 @@
             this->minuto=minuto;
         }
         DtFechaHora::~DtFechaHora(){}
+
+        ostream& operator <<(ostream& salida,DtFechaHora& dtfh){
+            cout << dtfh.dia << "/" << dtfh.mes << "/" << dtfh.anio << " - " << dtfh.hora << ":" << dtfh.minuto;
+        return salida;
+        }

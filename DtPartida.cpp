@@ -17,4 +17,11 @@
     void DtPartida::setDuracion(int duracion){
         this->duracion = duracion;
     }
+    string DtPartida::getOpciones(bool i){
+        if(i){
+            return "SI";
+        }else{
+            return "NO";
+        }
+    }
     DtPartida::~DtPartida(){}

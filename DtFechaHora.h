@@ -1,5 +1,8 @@
 #ifndef DTFECHAHORA
 #define DTFECHAHORA
+#include <iostream>
+
+using namespace std;
 
 class DtFechaHora{
     private:
@@ -18,5 +21,7 @@ class DtFechaHora{
         int getMinuto();
         void setMinuto(int minuto);
         ~DtFechaHora();
+
+        friend ostream& operator <<(ostream&,DtFechaHora&);
 };
 #endif

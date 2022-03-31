@@ -146,11 +146,11 @@ void imprimirPartidas(DtPartida** dtps, int cant){
     for(int i=0; i<cant; i++){
         DtPartidaIndividual* dtpi = dynamic_cast<DtPartidaIndividual*>(dtps[i]);
         if(dtpi != NULL){
-            cout << "DT PARTIDA INDIVIDUAL\n" << endl;
+            cout << *dtpi << "\n" << endl;
         }else{
             DtPartidaMultijugador* dtpm = dynamic_cast<DtPartidaMultijugador*>(dtps[i]);
             if(dtpm != NULL){
-                cout << "DT PARTIDA MULTIJUGADOR\n" << endl;
+                cout << *dtpm << "\n" << endl;
             }
         }
         }
@@ -163,16 +163,17 @@ void imprimirVideojuegos(DtJuego** dtgs, int cant){
         }
 }
 void menu(){
-    cout << "_____________________________________________________/n" << endl;
-    cout << "_________________VIDEOJUEGOS NASHEyS_________________/n" << endl;
-    cout << "_____________________________________________________/n" << endl;
+    cout << "_____________________________________________________\n" << endl;
+    cout << "_________________VIDEOJUEGOS NASHEyS_________________\n" << endl;
+    cout << "_____________________________________________________\n" << endl;
     cout << "1). Agregar Jugador" << endl;
     cout << "2). Imprimir Jugadores" << endl;
     cout << "3). Agregar VideoJuego" << endl;
     cout << "4). Imprimir VideoJuegos" << endl;
     cout << "5). Iniciar Partida" << endl;
+    cout << "6). Imprimir Partidas" << endl;
     cout << "10). Salir" << endl;
-    cout << "___________________________/n" << endl;
+    cout << "___________________________\n" << endl;
     cout << "OPCION: ";
 }
 void menuAgregarJugador(){
@@ -226,11 +227,8 @@ void menuAgregarVideoJuego(){
 
 
 void menuIniciarPartida(){
-    string nickname;
-    string juego;
-    int tipo;
-    int duracion;
-    bool conf;
+    string nickname, juego;
+    int tipo, duracion, conf;
     time_t t = time(NULL);
 	tm* timePtr = localtime(&t);    
     DtFechaHora *fecha = new DtFechaHora(timePtr->tm_mday, (timePtr->tm_mon+1), (timePtr->tm_year+1900), timePtr->tm_hour, timePtr->tm_min);    
@@ -252,7 +250,7 @@ void menuIniciarPartida(){
         cin >> duracion;
         cout << "\nEs una continuación? 1- Si; 2- No\n";
         cin >> conf;
-        if(conf != 1){
+        if(conf == 1){
             continua = true;
         }else{
             continua = false;
@@ -271,7 +269,7 @@ void menuIniciarPartida(){
         cin >> cantParticipantes;
         cout << "\nFue transmitida en vivo? 1- Si; 2- No\n";
         cin >> conf;
-        if(conf != 1){
+        if(conf == 1){
             enVivo = true;
         }else{
             enVivo = false;

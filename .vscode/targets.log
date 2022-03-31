@@ -1,6 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
-
+ 
 # GNU Make 4.3
 # Built for x86_64-redhat-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Mar 31 08:24:59 2022
+# Make data base, printed on Wed Mar 30 09:35:19 2022
 
 # Variables
 
@@ -21,9 +21,9 @@ NO_AT_BRIDGE = 1
 # environment
 LMOD_SETTARG_FULL_SUPPORT = no
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-4a351be8-b402-4df8-9304-72788197066d.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e2a6c009-91d7-4485-815b-ab283e6a896f.sock
 # environment
-GNOME_KEYRING_CONTROL = /home/tecnoinf/.cache/keyring-2KZ9J1
+GNOME_KEYRING_CONTROL = /home/tecnoinf/.cache/keyring-VU68J1
 # environment
 VSCODE_CWD = /home/tecnoinf
 # default
@@ -94,11 +94,11 @@ LESSOPEN = ||/usr/bin/lesspipe.sh %s
 # environment
 MFLAGS = -pqrR
 # environment
-_LXSESSION_PID = 1078
+_LXSESSION_PID = 1077
 # default
 .SHELLFLAGS := -c
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXPeZ3Yn/agent.1078
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXX5LBrII/agent.1077
 # environment
 HISTSIZE = 1000
 # environment
@@ -112,7 +112,7 @@ MAKEFILE_LIST := makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 6105
+VSCODE_PID = 1731
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -149,7 +149,7 @@ MAKECMDGOALS := all
 # environment
 XMODIFIERS = @im=none
 # environment
-SHLVL = 0
+SHLVL = 2
 # environment
 MAKELEVEL := 0
 # default
@@ -171,7 +171,7 @@ LMOD_sys = Linux
 # environment
 XDG_CONFIG_HOME = /home/tecnoinf/.config
 # environment
-INVOCATION_ID = ad22aa5744e5491fbf8d5f2b2abf0c72
+INVOCATION_ID = 7e1fd3785b39405480796177250cab93
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
@@ -184,6 +184,8 @@ GTK_IM_MODULE = gtk-im-context-simple
 XDG_CURRENT_DESKTOP = LXDE
 # environment
 KDEDIRS = /usr
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:
 # automatic
 +F = $(notdir $+)
 # environment
@@ -201,7 +203,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := principal
 # environment
-SYSTEMD_EXEC_PID = 990
+SYSTEMD_EXEC_PID = 987
 # environment
 MODULEPATH_ROOT = /usr/share/modulefiles
 # environment
@@ -221,13 +223,15 @@ DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/
 # environment
 PREFERRED = /usr/bin/startlxde
 # environment
-SSH_AGENT_PID = 1284
+SSH_AGENT_PID = 1282
 # environment
 _ = /bin/make
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:21041
+COLORTERM = truecolor
+# environment
+JOURNAL_STREAM = 8:27207
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -241,7 +245,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-53b47390-1.65.1-main.sock
 # environment
-TERM = dumb
+TERM = xterm-256color
 # environment
 XDG_SESSION_ID = 1
 # default
@@ -251,7 +255,13 @@ XDG_SESSION_ID = 1
 # default
 SUFFIXES := 
 # environment
+VSCODE_CLI = 1
+# environment
 LMOD_PKG = /usr/share/lmod/lmod
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VTE_VERSION = 6602
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
 # environment
@@ -259,7 +269,7 @@ XDG_MENU_PREFIX = lxde-
 # environment
 LMOD_VERSION = 8.4.30
 # variable set hash-table stats:
-# Load=118/1024=12%, Rehash=0, Collisions=11/148=7%
+# Load=123/1024=12%, Rehash=0, Collisions=12/153=8%
 
 # Pattern-specific Variable Values
 
@@ -267,7 +277,7 @@ LMOD_VERSION = 8.4.30
 
 # Directories
 
-# . (device 41, inode 112477): 43 files, no impossibilities.
+# . (device 42, inode 104852): 43 files, no impossibilities.
 
 # 43 files, no impossibilities in 1 directories.
 
@@ -282,6 +292,7 @@ DtJuego.o: DtJuego.cpp
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'makefile', line 10):
+ 
 	g++ -g -c DtJuego.cpp
 
 # Not a target:
@@ -376,7 +387,6 @@ clear:
 	clear
 
 principal: clear clean main.o DtJugador.o Jugador.o Juego.o DtJuego.o Partida.o PartidaIndividual.o PartidaMultijugador.o DtPartida.o DtPartidaIndividual.o DtPartidaMultijugador.o DtFechaHora.o
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -452,7 +462,7 @@ DtPartidaIndividual.o: DtPartidaIndividual.cpp
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-03-31 08:19:49.396047358
+#  Last modified 2022-03-30 09:34:25.675718602
 #  File has been updated.
 #  Successfully updated.
 
@@ -489,6 +499,6 @@ DtPartidaMultijugador.cpp:
 # strcache performance: lookups = 108 / hit rate = 52%
 # hash-table stats:
 # Load=51/8192=1%, Rehash=0, Collisions=0/108=0%
-# Finished Make data base on Thu Mar 31 08:24:59 2022
+# Finished Make data base on Wed Mar 30 09:35:19 2022
 
  

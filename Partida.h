@@ -2,6 +2,7 @@
 #define PARTIDA
 #include "DtFechaHora.h"
 #include "Jugador.h"
+#include "DtPartida.h"
 
     class Partida{
         private:
@@ -18,9 +19,10 @@
             DtJugador* getHost();
             void setHost(DtJugador* host);
             
-            ~Partida();
+            virtual ~Partida();
 
             virtual int darTotalHorasParticipantes()=0;
+            virtual DtPartida* getDtPartida()=0;
     };
 
 #endif

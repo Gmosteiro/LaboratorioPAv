@@ -13,8 +13,7 @@ private:
     string nombre;
     TipoGenero genero;
     Partida* partidas[MAX_PARTIDAS];
-    int tope;
-    
+    int tope;    
 public:
     Juego();
     Juego(string nombre, TipoGenero genero);
@@ -29,5 +28,4 @@ public:
     DtJuego* getDtJuego();
     ~Juego();   
 };
-
 #endif

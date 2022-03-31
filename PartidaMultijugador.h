@@ -1,9 +1,10 @@
 #ifndef PARTIDAMULTIJUGADOR
 #define PARTIDAMULTIJUGADOR
 #include "Partida.h"
+#include "DtPartida.h"
+#include "DtPartidaMultijugador.h"
 
 class PartidaMultijugador : public Partida{
-
     private:
         bool transmitidaEnVivo;
         int cantParticipantes;
@@ -16,7 +17,6 @@ class PartidaMultijugador : public Partida{
         void setCantParticipantes(int cantParticipantes);
         int darTotalHorasParticipantes();
         ~PartidaMultijugador();
-
+        DtPartida* getDtPartida();
 };
-
 #endif

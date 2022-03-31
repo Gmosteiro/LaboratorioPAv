@@ -1,6 +1,9 @@
 #ifndef DTPARTIDAINDIVIDUAL
 #define DTPARTIDAINDIVIDUAL
 #include "DtPartida.h"
+#include <iostream>
+
+using namespace std;
 
 class DtPartidaIndividual : public DtPartida{
 
@@ -12,6 +15,8 @@ class DtPartidaIndividual : public DtPartida{
         bool getcontinuaPartidaAnterior();
         void setcontinuaPartidaAnterior(bool continuaPartidaAnterior);
         ~DtPartidaIndividual();
+
+        friend ostream& operator <<(ostream&,DtPartidaIndividual&);
 
 };
 

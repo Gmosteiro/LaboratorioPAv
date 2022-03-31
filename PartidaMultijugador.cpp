@@ -22,4 +22,8 @@
     int PartidaMultijugador::darTotalHorasParticipantes(){
         return 0;
     }
-    PartidaMultijugador::~PartidaMultijugador(){}
+    PartidaMultijugador::~PartidaMultijugador(){}  //si esto anda a la prime
+    DtPartida* PartidaMultijugador::getDtPartida(){
+        DtPartida* dtpm = new DtPartidaMultijugador(this->getFecha(), this->getDuracion(), this->transmitidaEnVivo, this->cantParticipantes);
+        return dtpm;
+    }

@@ -13,3 +13,10 @@
         this->continuaPartidaAnterior = continuaPartidaAnterior;
     }
     DtPartidaIndividual::~DtPartidaIndividual(){}
+
+    ostream& operator <<(ostream& salida,DtPartidaIndividual& dtpi){
+
+    cout << "Fecha de la partida: " << dtpi.getFecha() << " | Duracion: " << dtpi.getDuracion() << " | Partida continuada: " << dtpi.getcontinuaPartidaAnterior() << endl;
+    return salida;
+
+    }

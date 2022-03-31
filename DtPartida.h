@@ -2,6 +2,7 @@
 #define DTPARTIDA
 #include "DtFechaHora.h"
 
+
     class DtPartida{
         private:
             DtFechaHora* fecha;
@@ -14,6 +15,7 @@
             int getDuracion();
             void setDuracion(int duracion);
             virtual ~DtPartida();
+            
     };
 
 #endif

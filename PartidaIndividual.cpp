@@ -16,4 +16,9 @@
     int PartidaIndividual::darTotalHorasParticipantes(){
         return 0;
     }
-    PartidaIndividual::~PartidaIndividual(){}
+    PartidaIndividual::~PartidaIndividual(){
+    }
+    DtPartida* PartidaIndividual::getDtPartida(){
+        DtPartida* dtpi = new DtPartidaIndividual(this->getFecha(), this->getDuracion(), this->continuaPartidaAnterior);
+        return dtpi;
+    }

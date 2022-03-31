@@ -19,3 +19,10 @@
         this->cantParticipantes = cantParticipantes;
     }
     DtPartidaMultijugador::~DtPartidaMultijugador(){}
+
+    ostream& operator <<(ostream& salida,DtPartidaMultijugador& dtpm){
+
+    cout << "Fecha de la partida: " << dtpm.getFecha() << " | Duracion: " << dtpm.getDuracion() << " | Transmitida en vivo: " << dtpm.getTransmitidaEnVivo() << " | Cantidad de jugadores: " << dtpm.getCantParticipantes() << endl;
+    return salida;
+    
+    }
